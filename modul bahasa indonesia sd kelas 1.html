@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayo Membaca! Bahasa Indonesia Kelas 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fbfdff;--line:#d4e6ff;--ink:#1f2a5a;--mut:#56618c;--card:#fff;--ok:#12a150;--bad:#e5384f;--pri:#4f46e5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141b3a;--line:#232f63;--ink:#eef2ff;--mut:#a3aed8;--card:#1d2650}}
+:root[data-theme="dark"]{--paper:#141b3a;--line:#232f63;--ink:#eef2ff;--mut:#a3aed8;--card:#1d2650}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;color:var(--ink);font:500 19px/1.45 "Baloo 2",ui-rounded,"Comic Sans MS",system-ui,sans-serif;background:var(--paper) repeating-linear-gradient(transparent 0 33px,var(--line) 33px 34px)}
+body::before{content:"";position:fixed;top:0;bottom:0;left:22px;width:2px;background:#ff8f8f;opacity:.7}
+.w{max-width:560px;margin:auto;padding:58px 16px 110px 36px}
+h1{font-size:30px;line-height:1.1;margin:.3em 0;font-weight:800}
+h2{font-size:22px;margin:.7em 0 .3em;font-weight:800}
+.sm{font-size:15px;color:var(--mut)}
+.hero{background:#ffd23f;color:#1f2a5a;border:3px solid #1f2a5a;border-radius:22px;box-shadow:5px 5px 0 var(--ink);padding:16px;margin:6px 5px 14px 0}
+.hero .sm{color:#1f2a5a}
+.blk{display:flex;gap:8px;margin-bottom:6px}
+.blk button{width:100%;max-width:56px;aspect-ratio:1;border:3px solid #1f2a5a;border-radius:14px;color:#fff;font:800 28px "Baloo 2",system-ui,sans-serif;box-shadow:3px 3px 0 #1f2a5a;cursor:pointer}
+.bar{height:14px;border-radius:9px;background:rgba(31,42,90,.18);margin:10px 0 4px;overflow:hidden}
+.bar i{display:block;height:100%;background:#1f2a5a;border-radius:9px}
+.fact{background:#fff3c4;color:#5b3a00;border:3px solid #5b3a00;border-radius:18px;padding:12px 14px;margin:12px 5px 12px 0}
+.card{display:flex;gap:14px;align-items:center;width:calc(100% - 5px);text-align:left;background:var(--card);color:var(--ink);border:3px solid var(--ink);border-radius:20px;box-shadow:5px 5px 0 var(--ink);padding:12px;margin:14px 0;font:inherit;cursor:pointer}
+.ic{flex:none;width:62px;height:62px;border-radius:16px;border:3px solid var(--ink);display:grid;place-items:center;font-size:32px}
+.tx{display:flex;flex-direction:column;line-height:1.25}
+.tx b{font-size:21px;font-weight:800}
+.tx em{font-style:normal;color:var(--mut);font-size:16px}
+.ch{font-size:14px;color:var(--mut)}
+.panel{background:var(--card);border:3px solid var(--ink);border-radius:20px;box-shadow:5px 5px 0 var(--ink);padding:14px 16px;margin:14px 5px 14px 0}
+.panel p{font-size:23px;margin:.35em 0}
+.panel.g{border-color:var(--ok);box-shadow:5px 5px 0 var(--ok)}
+.panel.r{border-color:var(--bad);box-shadow:5px 5px 0 var(--bad)}
+.c{text-align:center}.big{font-size:68px;line-height:1.1}.st{font-size:36px}
+.btn{background:var(--pri);color:#fff;border:3px solid var(--ink);border-radius:16px;box-shadow:4px 4px 0 var(--ink);padding:10px 18px;font:800 19px "Baloo 2",system-ui,sans-serif;cursor:pointer}
+.btn.big{display:block;width:calc(100% - 4px);margin:14px 0;font-size:21px;padding:12px}
+.btn.ghost{background:var(--card);color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.back{background:none;border:0;color:var(--pri);font:800 18px "Baloo 2",system-ui,sans-serif;padding:6px 0;cursor:pointer}
+.opt{display:block;width:calc(100% - 4px);text-align:left;background:var(--card);color:var(--ink);border:3px solid var(--ink);border-radius:18px;box-shadow:4px 4px 0 var(--ink);padding:12px 14px;margin:14px 0;font:700 22px "Baloo 2",system-ui,sans-serif;cursor:pointer}
+.opt b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--ink);color:var(--paper);margin-right:10px}
+.opt.ok{background:#c9f5dc;color:#0b3d22;border-color:var(--ok);box-shadow:4px 4px 0 var(--ok)}
+.opt.no{background:#ffd9df;color:#5a0a17;border-color:var(--bad);box-shadow:4px 4px 0 var(--bad)}
+.row{display:flex;gap:12px;flex-wrap:wrap}.row .opt{width:auto;flex:1 1 0;min-width:56px}.row .opt{text-align:center;font-size:40px;font-weight:800;margin:14px 0}
+.dots{display:flex;gap:8px;margin:6px 0}
+.dots i{width:14px;height:14px;border-radius:9px;background:var(--line);border:2px solid var(--ink)}
+.dots i.on{width:38px}
+.nav{display:flex;justify-content:space-between;gap:10px;margin:16px 0}
+.spk{background:var(--line);color:var(--ink);border:2px solid var(--ink);border-radius:12px;padding:4px 12px;font-size:20px;cursor:pointer}
+button:focus-visible{outline:4px solid #f59e0b;outline-offset:2px}
+@media(prefers-reduced-motion:no-preference){.card,.btn,.opt,.blk button{transition:transform .08s,box-shadow .08s}.card:active,.btn:active,.opt:active,.blk button:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}}
+.mem{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 5px 14px 0}
+.mc{aspect-ratio:1;border:3px solid var(--ink);border-radius:16px;background:var(--pri);color:#fff;font:800 28px "Baloo 2",system-ui,sans-serif;box-shadow:3px 3px 0 var(--ink);display:grid;place-items:center;cursor:pointer;padding:2px}
+.mc.o{background:var(--card);color:var(--ink);font-size:36px}.mc.o.w{font-size:20px}
+.mc.d{background:#c9f5dc;color:#0b3d22;border-color:var(--ok)}
+.slot{min-width:72px;height:62px;border:3px dashed var(--ink);border-radius:14px;display:grid;place-items:center;font-size:30px;font-weight:800;padding:0 8px}
+.opt:disabled{opacity:.3;cursor:default}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:5;display:flex;justify-content:space-around;background:var(--card);border-top:3px solid var(--ink);padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px))}
+nav[hidden]{display:none}
+nav button{background:none;border:0;border-radius:16px;color:var(--mut);font:800 14px "Baloo 2",system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;padding:2px 20px;cursor:pointer}
+nav button span{font-size:24px;line-height:1.2}
+nav button.on{background:var(--line);color:var(--ink)}
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(92px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:14px;font-size:16px;max-width:88%;text-align:center;z-index:9}
+.srch{width:calc(100% - 5px);border:3px solid var(--ink);border-radius:16px;background:var(--card);color:var(--ink);padding:8px 14px;font:700 18px "Baloo 2",system-ui,sans-serif;margin:6px 0}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 5px 8px 0}
+.chip{flex:none;border:3px solid var(--ink);border-radius:999px;background:var(--card);color:var(--ink);padding:2px 14px;font:700 16px "Baloo 2",system-ui,sans-serif;cursor:pointer}
+.chip.on{background:var(--pri);color:#fff}
+.tag{align-self:flex-start;font-size:13px;font-weight:800;border-radius:999px;padding:0 10px;background:var(--line)}
+.act{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.star{background:none;border:0;font-size:30px;line-height:1;color:#f59e0b;cursor:pointer}
+.open{background:none;border:0;font:800 17px "Baloo 2",system-ui,sans-serif;color:var(--pri);cursor:pointer;white-space:nowrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 5px 14px 0}
+.stat{background:var(--card);border:3px solid var(--ink);border-radius:18px;box-shadow:4px 4px 0 var(--ink);text-align:center;padding:10px 4px;font-size:14px;color:var(--mut);line-height:1.2}
+.stat b{display:block;font-size:30px;color:var(--ink)}
+.badges{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:8px 5px 14px 0}
+.bd{background:var(--card);border:3px solid var(--ink);border-radius:18px;text-align:center;padding:10px 6px;font-size:14px;color:var(--mut);line-height:1.25}
+.bd b{display:block;font-size:19px;color:var(--ink)}
+.bd i{font-style:normal;font-size:36px;display:block}
+.bd.lock{opacity:.55}
+
+.snd{position:fixed;top:calc(8px + env(safe-area-inset-top,0px));right:12px;z-index:6;width:46px;height:46px;border-radius:50%;border:3px solid var(--ink);background:var(--card);color:var(--ink);font-size:22px;line-height:1;box-shadow:3px 3px 0 var(--ink);cursor:pointer;display:grid;place-items:center;padding:0}
+.snd.off{background:#ffd9df}
+.snd:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.ln{cursor:pointer;border-radius:10px;padding:0 8px;margin-left:-8px;margin-right:-8px}
+.ln.hl{background:#fff3c4;color:#5b3a00}
+.rbar{display:flex;gap:8px;margin:4px 0 2px}
+.set{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-top:2px dashed var(--line);font-weight:700}
+.set small{display:block;color:var(--mut);font-size:14px;font-weight:500;line-height:1.25}
+.sw{flex:none;width:62px;height:34px;border-radius:999px;border:3px solid var(--ink);background:var(--line);position:relative;cursor:pointer;padding:0}
+.sw i{position:absolute;top:2px;left:2px;width:24px;height:24px;border-radius:50%;background:var(--ink);transition:left .15s}
+.sw[aria-checked="true"]{background:var(--ok)}
+.sw[aria-checked="true"] i{left:30px;background:#fff}
+.slot.lt{min-width:48px;padding:0 4px}
+.slot.wd{font-size:20px;min-width:64px}
+.row .opt.wd{font-size:22px;min-width:72px}
+.cf{position:fixed;top:-40px;z-index:20;pointer-events:none;animation:fall 1.9s ease-in forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.hi{display:inline-block;background:#fff;color:#1f2a5a;border:2px solid #1f2a5a;border-radius:999px;padding:0 12px;font-size:15px;font-weight:800;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="w" id="app"></div>
+<div id="toast" role="status" hidden></div>
+<button id="snd" class="snd" onclick="togSnd()" aria-label="Matikan suara" aria-pressed="true">🔊</button>
+<nav id="nv" hidden><button data-t="home" onclick="home()"><span>🏠</span>Beranda</button><button data-t="buku" onclick="buku()"><span>📚</span>Buku</button><button data-t="tentang" onclick="tentang()"><span>ℹ️</span>Tentang</button></nav>
+<script>
+const D={"mataPelajaran": "Bahasa Indonesia", "kelas": 1, "usiaSasaran": "6-7 tahun", "modul": [{"id": "modul_1", "nomor": 1, "judul": "Abjad dan Bunyi Huruf", "deskripsi": "Mengenal huruf vokal dan konsonan.", "ikon": "🔤", "warna": "#5B3FE0", "durasiMenit": 4, "subMateri": [{"judul": "Huruf Vokal yang Ramah (A, I, U, E, O)", "isi": ["Ada 5 huruf vokal.", "Huruf vokal itu A, I, U, E, O.", "Huruf vokal itu ramah. Bunyinya keluar dengan mulut terbuka.", "A seperti Apel 🍎.", "I seperti Ikan 🐟.", "U seperti Ular 🐍.", "E seperti Elang 🦅.", "O seperti Orang 🧑.", "Ayo ucapkan bersama: A, I, U, E, O!"], "id": "modul_1_sub_1", "urutan": 1}, {"judul": "Membaca Suku Kata Sederhana (ba-bu, ma-ma)", "isi": ["Huruf selain A, I, U, E, O disebut huruf konsonan.", "Contohnya B, M, K, dan S.", "Suku kata adalah potongan kata.", "Konsonan bertemu vokal. Jadilah suku kata.", "B + A = BA. B + U = BU.", "Ayo baca pelan-pelan: ba, bi, bu, be, bo.", "Gabungkan suku kata: ba-bu, ma-ma, bu-ku, ba-ju.", "Hebat! Kamu sudah bisa membaca suku kata."], "id": "modul_1_sub_2", "urutan": 2}, {"judul": "Benda di Sekitarku dan Huruf Depannya", "isi": ["Setiap benda punya nama.", "Nama benda punya huruf depan.", "Buku 📚 huruf depannya B.", "Meja huruf depannya M.", "Pensil ✏️ huruf depannya P.", "Topi 🧢 huruf depannya T.", "Kursi huruf depannya K.", "Ayo cari benda di kelasmu. Sebutkan huruf depannya!"], "id": "modul_1_sub_3", "urutan": 3}], "tipsGuru": "Ucapkan bunyi huruf dengan jelas, lalu minta anak menirukan. Gunakan kartu huruf bergambar agar anak mudah mengingat. Beri pujian untuk setiap usaha anak, sekecil apa pun.", "tahukahKamu": "Abjad bahasa Indonesia punya 26 huruf, dari A sampai Z. Ada 5 huruf vokal dan 21 huruf konsonan!", "jumlahMateri": 3}, {"id": "modul_2", "nomor": 2, "judul": "Membaca Kata dan Kalimat Pendek", "deskripsi": "Dari suku kata menjadi kata dan kalimat.", "ikon": "📖", "warna": "#1BBFA5", "durasiMenit": 4, "subMateri": [{"judul": "Merangkai Kata Sederhana", "isi": ["Suku kata bisa digabung. Jadilah kata.", "ba + ju = baju 👕", "bu + ku = buku 📚", "ma + ta = mata 👀", "sa + pi = sapi 🐄", "ka + ki = kaki 🦶", "Kata punya arti. Baju untuk dipakai. Buku untuk dibaca."], "id": "modul_2_sub_1", "urutan": 1}, {"judul": "Membaca Kalimat 2-3 Kata", "isi": ["Kata bisa digabung. Jadilah kalimat.", "Kalimat pendek punya 2 atau 3 kata.", "Contoh: Ibu masak.", "Contoh: Adik makan nasi.", "Contoh: Ayah baca buku.", "Huruf pertama kalimat ditulis besar.", "Ayo baca bersama-sama!"], "id": "modul_2_sub_2", "urutan": 2}, {"judul": "Mengenal Tanda Baca Titik (.) dan Tanya (?)", "isi": ["Titik (.) ada di akhir kalimat cerita.", "Contoh: Ani makan nasi.", "Tanda tanya (?) ada di akhir kalimat tanya.", "Contoh: Siapa namamu?", "Contoh: Itu apa?", "Saat bertemu titik, suaramu turun dan berhenti sebentar.", "Saat bertemu tanda tanya, suaramu naik sedikit."], "id": "modul_2_sub_3", "urutan": 3}], "tipsGuru": "Minta anak menunjuk setiap kata dengan jari saat membaca. Contohkan intonasi: suara turun untuk titik, suara naik sedikit untuk tanda tanya.", "tahukahKamu": "Tanda tanya (?) dipakai di banyak bahasa di dunia, bukan hanya bahasa Indonesia!", "jumlahMateri": 3}, {"id": "modul_3", "nomor": 3, "judul": "Listening & Speaking", "deskripsi": "Mendengar dan berbicara dengan sopan.", "ikon": "🗣️", "warna": "#F59E0B", "durasiMenit": 4, "subMateri": [{"judul": "Menyapa Teman dan Guru dengan Sopan", "isi": ["Kita menyapa dengan sopan.", "Pagi hari: Selamat pagi.", "Siang hari: Selamat siang.", "Sore hari: Selamat sore.", "Malam hari: Selamat malam.", "Menyapa guru: Selamat pagi, Bu Guru.", "Menyapa teman: Halo, Dina! Apa kabar?", "Saat menyapa, lihat orangnya, tersenyum, dan bicara dengan suara jelas. 😊"], "id": "modul_3_sub_1", "urutan": 1}, {"judul": "Mengucapkan Kata Ajaib (Tolong, Terima Kasih, Maaf)", "isi": ["Ada 3 kata ajaib.", "Tolong: dipakai saat kita minta bantuan. Contoh: Tolong ambilkan pensil, ya.", "Terima kasih: dipakai saat kita diberi atau dibantu. Contoh: Terima kasih, Bu.", "Maaf: dipakai saat kita berbuat salah. Contoh: Maaf, aku tidak sengaja.", "Kata ajaib membuat semua orang senang. ✨"], "id": "modul_3_sub_2", "urutan": 2}, {"judul": "Menceritakan Diri Sendiri (Nama, Umur, Hobi)", "isi": ["Ayo kenalkan dirimu!", "Sebutkan namamu. Contoh: Namaku Sinta.", "Sebutkan umurmu. Contoh: Umurku 7 tahun.", "Sebutkan hobimu. Hobi adalah kegiatan yang kamu suka. Contoh: Hobiku menggambar.", "Ayo latihan: Namaku ..., umurku ..., hobiku ...."], "id": "modul_3_sub_3", "urutan": 3}], "tipsGuru": "Beri kesempatan anak berlatih berbicara dengan kalimat contoh. Dengarkan sampai selesai tanpa memotong, lalu beri pujian atas keberaniannya.", "tahukahKamu": "Di Indonesia ada ratusan bahasa daerah. Bahasa Indonesia membantu kita saling mengerti!", "jumlahMateri": 3}, {"id": "modul_4", "nomor": 4, "judul": "Budi Pekerti & Karakter Sehari-hari", "deskripsi": "Menjadi anak yang rapi, jujur, dan baik.", "ikon": "🤝", "warna": "#F43F5E", "durasiMenit": 5, "subMateri": [{"judul": "Merawat Buku dan Alat Tulis", "isi": ["Buku dan alat tulis adalah teman belajar kita.", "Kita harus merawatnya.", "Simpan buku di dalam tas dengan rapi.", "Jangan mencoret-coret buku.", "Jangan melipat atau menyobek halaman buku.", "Tutup spidol setelah dipakai. Raut pensil dengan hati-hati.", "Cuci tangan sebelum membaca buku. Tangan bersih, buku pun bersih."], "id": "modul_4_sub_1", "urutan": 1}, {"judul": "Menyimak Cerita Dongeng Pendek", "isi": ["Ayo simak dongeng pendek: Kelinci yang Jujur 🐰", "Kelinci menemukan dompet di taman.", "Kelinci tidak membawanya pulang.", "Kelinci mencari pemiliknya.", "Kelinci bertemu Bu Beruang.", "\"Ini dompet Ibu?\" tanya Kelinci.", "\"Ya! Terima kasih, Kelinci!\" kata Bu Beruang.", "Kelinci senang. Hatinya tenang.", "Ayo jawab: Siapa tokoh dongengnya? Apa yang dilakukan Kelinci?"], "id": "modul_4_sub_2", "urutan": 2}, {"judul": "Menjadi Anak yang Jujur dan Baik", "isi": ["Anak jujur selalu berkata benar.", "Anak jujur mengaku saat berbuat salah.", "Anak jujur tidak mengambil barang milik orang lain.", "Anak baik suka menolong teman.", "Anak baik berkata dengan sopan.", "Kalau kita jujur dan baik, teman-teman pun sayang padamu. 💛"], "id": "modul_4_sub_3", "urutan": 3}], "tipsGuru": "Setelah membacakan dongeng, ajukan pertanyaan sederhana: siapa, di mana, dan apa yang terjadi. Contohkan kejujuran lewat perilaku sehari-hari di kelas.", "tahukahKamu": "Dongeng sudah diceritakan dari mulut ke mulut sejak zaman dulu, bahkan sebelum ada buku!", "jumlahMateri": 3}], "kuis": [{"id": "m1_q1", "modulId": "modul_1", "pertanyaan": "Huruf pertama dari kata \"A-p-e-l 🍎\" adalah...", "pilihan": [{"kode": "A", "teks": "A"}, {"kode": "B", "teks": "L"}, {"kode": "C", "teks": "P"}], "jawabanBenar": "A", "penjelasan": "Bagus sekali! Kata Apel diawali huruf A."}, {"id": "m1_q2", "modulId": "modul_1", "pertanyaan": "Mana yang huruf vokal?", "pilihan": [{"kode": "A", "teks": "B"}, {"kode": "B", "teks": "U"}, {"kode": "C", "teks": "M"}], "jawabanBenar": "B", "penjelasan": "Keren! U adalah huruf vokal. Huruf vokal itu A, I, U, E, O."}, {"id": "m1_q3", "modulId": "modul_1", "pertanyaan": "B + U = ...", "pilihan": [{"kode": "A", "teks": "BA"}, {"kode": "B", "teks": "BI"}, {"kode": "C", "teks": "BU"}], "jawabanBenar": "C", "penjelasan": "Pintar! B dan U menjadi BU, seperti pada kata buku 📚."}, {"id": "m2_q1", "modulId": "modul_2", "pertanyaan": "ma + ta = ...  👀", "pilihan": [{"kode": "A", "teks": "mama"}, {"kode": "B", "teks": "tata"}, {"kode": "C", "teks": "mata"}], "jawabanBenar": "C", "penjelasan": "Hebat! Suku kata ma dan ta digabung menjadi mata."}, {"id": "m2_q2", "modulId": "modul_2", "pertanyaan": "Mana kalimat yang benar?", "pilihan": [{"kode": "A", "teks": "Adik makan nasi."}, {"kode": "B", "teks": "Makan adik nasi."}, {"kode": "C", "teks": "Nasi makan adik."}], "jawabanBenar": "A", "penjelasan": "Mantap! Adik makan nasi. Kata-katanya sudah berurutan."}, {"id": "m2_q3", "modulId": "modul_2", "pertanyaan": "Siapa namamu_  Tanda baca yang tepat adalah...", "pilihan": [{"kode": "A", "teks": "Titik (.)"}, {"kode": "B", "teks": "Tanda tanya (?)"}, {"kode": "C", "teks": "Tidak pakai tanda"}], "jawabanBenar": "B", "penjelasan": "Kamu benar! Kalimat tanya diakhiri dengan tanda tanya (?)."}, {"id": "m3_q1", "modulId": "modul_3", "pertanyaan": "Pagi hari kamu bertemu Bu Guru 🏫. Kamu berkata...", "pilihan": [{"kode": "A", "teks": "Selamat malam, Bu."}, {"kode": "B", "teks": "Selamat pagi, Bu."}, {"kode": "C", "teks": "Sampai jumpa, Bu."}], "jawabanBenar": "B", "penjelasan": "Pintar! Di pagi hari kita berkata: Selamat pagi."}, {"id": "m3_q2", "modulId": "modul_3", "pertanyaan": "Teman memberimu hadiah 🎁. Kata ajaibnya...", "pilihan": [{"kode": "A", "teks": "Maaf"}, {"kode": "B", "teks": "Tolong"}, {"kode": "C", "teks": "Terima kasih"}], "jawabanBenar": "C", "penjelasan": "Hebat! Saat diberi sesuatu, kita berkata: Terima kasih."}, {"id": "m3_q3", "modulId": "modul_3", "pertanyaan": "Kamu tidak sengaja menabrak teman. Kata ajaibnya...", "pilihan": [{"kode": "A", "teks": "Maaf"}, {"kode": "B", "teks": "Terima kasih"}, {"kode": "C", "teks": "Tolong"}], "jawabanBenar": "A", "penjelasan": "Bagus sekali! Saat berbuat salah, kita berkata: Maaf."}, {"id": "m4_q1", "modulId": "modul_4", "pertanyaan": "Cara merawat buku 📚 yang baik adalah...", "pilihan": [{"kode": "A", "teks": "Dicoret-coret"}, {"kode": "B", "teks": "Disimpan di tas dengan rapi"}, {"kode": "C", "teks": "Dilempar"}], "jawabanBenar": "B", "penjelasan": "Keren! Buku disimpan dengan rapi agar tetap bagus."}, {"id": "m4_q2", "modulId": "modul_4", "pertanyaan": "Kelinci 🐰 menemukan dompet. Apa yang Kelinci lakukan?", "pilihan": [{"kode": "A", "teks": "Membawa pulang"}, {"kode": "B", "teks": "Membuangnya"}, {"kode": "C", "teks": "Mencari pemiliknya"}], "jawabanBenar": "C", "penjelasan": "Hebat! Kelinci jujur. Ia mencari pemilik dompet."}, {"id": "m4_q3", "modulId": "modul_4", "pertanyaan": "Kamu memecahkan gelas 🥛. Anak jujur akan...", "pilihan": [{"kode": "A", "teks": "Mengaku kepada Ibu"}, {"kode": "B", "teks": "Diam saja"}, {"kode": "C", "teks": "Menyalahkan adik"}], "jawabanBenar": "A", "penjelasan": "Pintar! Anak jujur berani mengaku. Kamu anak hebat!"}]};
+const ITEMS=[["🍎","Apel","A"],["🐟","Ikan","I"],["🐍","Ular","U"],["🦅","Elang","E"],["📚","Buku","B"],["✏️","Pensil","P"],["🧢","Topi","T"],["🐄","Sapi","S"],["👕","Baju","B"],["🦶","Kaki","K"],["👀","Mata","M"],["🪑","Kursi","K"],["🍌","Pisang","P"],["🌙","Bulan","B"],["☀️","Matahari","M"],["🐱","Kucing","K"]];
+let S={};try{S=JSON.parse(localStorage.getItem("k1")||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem("k1",JSON.stringify(S))}catch(e){}};
+const app=document.getElementById("app"),nv=document.getElementById("nv");
+let TAB=null;
+const A={set v(h){stopRead();app.innerHTML=h;nv.hidden=!TAB;nv.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.t==TAB));TAB=null;syncSnd()}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+const stars=n=>"⭐".repeat(n)+"☆".repeat(3-n);
+const shuffle=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(p=>p[1]);
+/* ===== SUARA: bisa dinonaktifkan (S.vo = suara bacaan, S.fx = efek suara) ===== */
+const RATES=[.7,.85,1];
+const clean=t=>String(t).replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu,"").replace(/_/g," ").replace(/\s+/g," ").trim();
+let VC=null,rtok=0,AC=null;
+function voice(){try{if(!VC)VC=speechSynthesis.getVoices().find(v=>/^id/i.test(v.lang))||null}catch(e){}return VC}
+function speakText(t,cb){
+  try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(clean(t));u.lang="id-ID";u.rate=RATES[S.rt??1];const v=voice();if(v)u.voice=v;if(cb){u.onend=cb;u.onerror=cb}speechSynthesis.speak(u)}catch(e){cb&&cb()}
+}
+function say(t){if(S.vo===0)return;rtok++;clearHl();speakText(t)}
+function hear(t){if(S.vo===0){toast("Suara sedang nonaktif. Ketuk tombol 🔇 di kanan atas untuk menyalakan.");return}say(t)}
+function clearHl(){document.querySelectorAll(".ln.hl").forEach(e=>e.classList.remove("hl"))}
+function setBtn(on){const b=document.getElementById("rb");if(b){b.dataset.on=on?"1":"";b.textContent=on?"⏹ Berhenti":"🔊 Bacakan Semua"}}
+function stopRead(){rtok++;try{speechSynthesis.cancel()}catch(e){}clearHl();setBtn(false)}
+function hearEl(el){
+  if(S.vo===0){toast("Suara sedang nonaktif. Ketuk tombol 🔇 di kanan atas untuk menyalakan.");return}
+  rtok++;clearHl();setBtn(false);el.classList.add("hl");speakText(el.textContent,()=>el.classList.remove("hl"));
+}
+function readAll(){
+  const b=document.getElementById("rb");
+  if(b&&b.dataset.on){stopRead();return}
+  if(S.vo===0){toast("Suara sedang nonaktif. Ketuk tombol 🔇 di kanan atas untuk menyalakan.");return}
+  const ps=[...document.querySelectorAll("#lines .ln")],tok=++rtok;let i=0;setBtn(true);
+  const next=()=>{if(tok!==rtok)return;clearHl();if(i>=ps.length){setBtn(false);return}const p=ps[i++];p.classList.add("hl");try{p.scrollIntoView({block:"center",behavior:"smooth"})}catch(e){}speakText(p.textContent,next)};
+  next();
+}
+const FX={ok:[[660,.1],[880,.16]],no:[[260,.16],[190,.24]],win:[[523,.1],[659,.1],[784,.1],[1047,.28]],tap:[[620,.06]]};
+function fx(n){
+  if(S.fx===0)return;
+  try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();if(AC.state=="suspended")AC.resume();let t=AC.currentTime;
+    FX[n].forEach(([f,d])=>{const o=AC.createOscillator(),g=AC.createGain();o.type=n=="no"?"triangle":"sine";o.frequency.value=f;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.18,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(AC.destination);o.start(t);o.stop(t+d+.03);t+=d})}catch(e){}
+}
+function syncSnd(){
+  const on=S.vo!==0||S.fx!==0,b=document.getElementById("snd");
+  if(b){b.textContent=on?"🔊":"🔇";b.classList.toggle("off",!on);b.setAttribute("aria-label",on?"Matikan suara":"Nyalakan suara");b.setAttribute("aria-pressed",String(on))}
+  document.querySelectorAll(".sw").forEach(s=>s.setAttribute("aria-checked",String(S[s.dataset.k]!==0)));
+}
+function togSnd(){
+  const on=S.vo!==0||S.fx!==0;
+  if(on){stopRead();S.vo=0;S.fx=0}else{S.vo=1;S.fx=1}
+  save();syncSnd();toast(on?"🔇 Semua suara dimatikan":"🔊 Suara dinyalakan");if(!on)fx("ok");
+}
+function tg(k){
+  S[k]=S[k]===0?1:0;if(k=="vo"&&S.vo===0)stopRead();
+  save();syncSnd();if(S[k]!==0){k=="fx"?fx("ok"):say("Suara bacaan menyala.")}
+}
+function applyTheme(){const r=document.documentElement;if(S.th=="light"||S.th=="dark")r.dataset.theme=S.th;else delete r.dataset.theme}
+function burst(){
+  try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return}catch(e){}
+  const e=["🎉","⭐","✨","🎈","🌟"];
+  for(let i=0;i<26;i++){const s=document.createElement("span");s.className="cf";s.setAttribute("aria-hidden","true");s.textContent=e[i%5];s.style.cssText=`left:${Math.random()*96}vw;animation-delay:${Math.random()*.5}s;font-size:${18+Math.random()*18}px`;document.body.appendChild(s);setTimeout(()=>s.remove(),2600)}
+}
+/* ===== Hari beruntun ===== */
+const ymd=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+function streak(){const t=ymd(new Date()),y=ymd(new Date(Date.now()-864e5));return S.day===t||S.day===y?(S.str||0):0}
+function good(){
+  S.ok=(S.ok||0)+1;const t=ymd(new Date());
+  if(S.day!=t){const y=ymd(new Date(Date.now()-864e5));S.str=S.day==y?(S.str||0)+1:1;S.day=t;S.bs=Math.max(S.bs||0,S.str)}
+  save();
+}
+const LET={A:["Apel","🍎"],I:["Ikan","🐟"],U:["Ular","🐍"],E:["Elang","🦅"],O:["Orang","🧑"]};
+function letter(c){const l=LET[c];fx("tap");toast(`${c} seperti ${l[0]} ${l[1]}`);say(`${c}. ${c} seperti ${l[0]}`)}
+let M,st,cur,Q,qi,sc,ans;
+
+function home(){TAB="home";
+  const done=D.modul.filter(m=>S[m.id]!=null).length;
+  const fact=D.modul[Math.floor(Math.random()*D.modul.length)].tahukahKamu;
+  const col=["#ef4444","#d97706","#16a34a","#2563eb","#9333ea"];
+  A.v=`<div class="hero"><div class="blk">${"AIUEO".split("").map((c,i)=>`<button style="background:${col[i]}" onclick="letter('${c}')" aria-label="Huruf ${c}">${c}</button>`).join("")}</div><h1>${S.nama?`Halo, ${esc(S.nama)}! 👋`:"Ayo Membaca!"}</h1><div class="sm">Bahasa Indonesia untuk Kelas 1 SD</div>${streak()?`<div class="hi">🔥 ${streak()} hari beruntun</div>`:""}<div class="bar"><i style="width:${done/D.modul.length*100}%"></i></div><div class="sm">${done} dari ${D.modul.length} modul selesai</div></div>
+  <div class="fact">🤓 <b>Tahukah Kamu?</b><br>${esc(fact)}</div><button class="card" onclick="buku()" style="background:#2dd4bf;color:#06302b"><span class="ic" style="background:#fff">📚</span><span class="tx"><b>Buku K13 Kelas 1 SD</b><em style="color:#06302b">16 buku: Tematik Terpadu Tema 1–8, Buku Siswa dan Buku Guru.</em></span><span style="margin-left:auto;font-size:28px">›</span></button><h2>Pilih Modul</h2>`+
+  D.modul.map(m=>`<button class="card" onclick="openM('${m.id}')"><span class="ic" style="background:${m.warna}">${m.ikon}</span><span class="tx"><small style="color:${m.warna};font-weight:800">Modul ${m.nomor}</small><b>${esc(m.judul)}</b><em>${esc(m.deskripsi)}</em><span class="ch">${m.durasiMenit} menit, ${m.jumlahMateri} materi${S[m.id]!=null?" · "+stars(S[m.id]):""}</span></span></button>`).join("")+
+  `<h2>Main & Latihan</h2><button class="card" onclick="games()"><span class="ic" style="background:#ffd23f">🎮</span><span class="tx"><b>Main Yuk!</b><em>${GAMES.length} game seru untuk belajar membaca.</em><span class="ch">Huruf, kata, memori, dan lainnya</span></span></button><button class="card" onclick="mix()"><span class="ic" style="background:#38bdf8">🔀</span><span class="tx"><b>Latihan Campur</b><em>8 soal acak dari semua modul.</em><span class="ch">Soal dan jawabannya selalu berganti</span></span></button>`;
+  scrollTo(0,0);
+}
+
+function openM(id){M=D.modul.find(m=>m.id==id);st=0;mod()}
+function mod(){
+  const n=M.subMateri.length,last=st==n;
+  let h=`<button class="back" onclick="home()">← Beranda</button><h1 style="color:${M.warna}">${M.ikon} ${esc(M.judul)}</h1><div class="dots">${Array.from({length:n+1},(_,i)=>`<i class="${i==st?"on":""}"${i==st?` style="background:${M.warna}"`:""}></i>`).join("")}</div>`;
+  if(!last){
+    const s=M.subMateri[st];
+    h+=`<div class="panel"><h2>${st+1}. ${esc(s.judul)}</h2><div class="rbar"><button class="spk" id="rb" onclick="readAll()">🔊 Bacakan Semua</button></div><div class="sm">Ketuk satu kalimat untuk mendengarnya.</div><div id="lines">${s.isi.map(l=>`<p class="ln" onclick="hearEl(this)">${esc(l)}</p>`).join("")}</div></div>`;
+  }else{
+    h+=`<div class="panel"><h2>👩‍🏫 Tips untuk Guru/Orang Tua</h2><p style="font-size:19px">${esc(M.tipsGuru)}</p></div><div class="fact">🤓 <b>Tahukah Kamu?</b><br>${esc(M.tahukahKamu)}</div><button class="btn big" style="background:${M.warna}" onclick="quiz()">Mulai Kuis</button>`;
+  }
+  h+=`<div class="nav"><button class="btn ghost" ${st?"":"disabled"} onclick="st--;mod()">← Kembali</button>${last?"":`<button class="btn" style="background:${M.warna}" onclick="st++;mod()">Lanjut →</button>`}</div>`;
+  A.v=h;scrollTo(0,0);
+}
+
+const EX=[
+[1,"Huruf pertama kata \"I-k-a-n 🐟\" adalah...","I","K","N","Hebat! Ikan diawali huruf I."],
+[1,"Mana yang huruf konsonan?","M","A","E","Benar! M adalah konsonan. Vokal itu A, I, U, E, O."],
+[1,"B + A = ...","BA","AB","BE","Pintar! B dan A menjadi BA."],
+[1,"Huruf depan \"Buku 📚\" adalah...","B","K","U","Bagus! Buku diawali huruf B."],
+[2,"ba + ju = ...  👕","baju","jubah","buja","Hebat! ba dan ju menjadi baju."],
+[2,"sa + pi = ...  🐄","sapi","pisa","sipa","Hebat! sa dan pi menjadi sapi."],
+[2,"Mana kalimat yang benar?","Ibu masak.","Masak Ibu.","masak Ibu.","Mantap! Kalimat dimulai huruf besar dan diakhiri titik."],
+[2,"Kalimat cerita diakhiri tanda...","Titik (.)","Tanda tanya (?)","Tidak ada tanda","Betul! Kalimat cerita diakhiri titik (.)."],
+[3,"Sore hari, kamu bertemu teman. Kamu berkata...","Selamat sore","Selamat pagi","Selamat malam","Pintar! Di sore hari kita berkata: Selamat sore."],
+[3,"Kamu ingin dipinjami penghapus. Katakan...","Tolong","Maaf","Terima kasih","Hebat! Saat minta bantuan, kita berkata: Tolong."],
+[3,"Hobi adalah kegiatan yang...","kamu suka","kamu benci","kamu takuti","Betul! Hobi adalah kegiatan yang kamu suka."],
+[3,"Cara memperkenalkan nama yang benar...","Namaku Sinta.","Sinta namaku aku.","Aku nama Sinta.","Bagus! Namaku Sinta. Kalimatnya berurutan."],
+[4,"Setelah memakai spidol 🖍️, kita harus...","Menutupnya","Membuangnya","Menggigitnya","Keren! Spidol ditutup agar tidak kering."],
+[4,"Anak jujur selalu berkata...","Benar","Bohong","Diam saja","Hebat! Anak jujur berkata benar."],
+[4,"Teman jatuh di lapangan. Anak baik akan...","Menolong","Menertawakan","Pergi","Pintar! Anak baik menolong teman."],
+[4,"Kamu menemukan uang milik teman. Kamu akan...","Mengembalikannya","Menyimpannya","Membuangnya","Bagus! Anak jujur mengembalikan barang teman."],
+[1,"Huruf vokal ada berapa?","5","4","6","Betul! Ada 5 huruf vokal: A, I, U, E, O."],
+[1,"Huruf depan Topi 🧢 adalah...","T","P","O","Pintar! Topi diawali huruf T."],
+[2,"ka + ki = ...  🦶","kaki","kika","kiki","Hebat! ka dan ki menjadi kaki."],
+[2,"Mana yang kalimat tanya?","Itu apa?","Itu buku.","Itu meja.","Benar! Kalimat tanya diakhiri tanda tanya (?)."],
+[3,"Pagi hari kamu bertemu teman. Kamu berkata...","Selamat pagi","Selamat malam","Selamat sore","Bagus! Di pagi hari kita berkata: Selamat pagi."],
+[3,"Hobiku menggambar. Menggambar adalah...","hobi","umur","nama","Betul! Menggambar adalah hobi, kegiatan yang kamu suka."],
+[4,"Kita mencuci tangan sebelum...","membaca buku","mencoret buku","menyobek buku","Pintar! Tangan bersih, buku pun bersih."],
+[4,"Anak baik berkata dengan...","sopan","kasar","berteriak","Hebat! Anak baik berkata dengan sopan."]];
+const BANK=D.kuis.map(k=>{const c=k.pilihan.find(p=>p.kode==k.jawabanBenar).teks;return{m:k.modulId,q:k.pertanyaan,o:[c,...k.pilihan.filter(p=>p.teks!=c).map(p=>p.teks)],ex:k.penjelasan}}).concat(EX.map(t=>({m:"modul_"+t[0],q:t[1],o:[t[2],t[3],t[4]],ex:t[5]})));
+function prep(b){const o=shuffle(b.o);return{pertanyaan:b.q,pilihan:o.map((x,i)=>({kode:"ABC"[i],teks:x})),jawabanBenar:"ABC"[o.indexOf(b.o[0])],penjelasan:b.ex}}
+let qm=0;
+function quiz(){qm=0;Q=shuffle(BANK.filter(b=>b.m==M.id)).slice(0,5).map(prep);qi=0;sc=0;ans=null;q()}
+function mix(){qm=1;Q=shuffle(BANK).slice(0,8).map(prep);qi=0;sc=0;ans=null;q()}
+function q(){
+  if(qi>=Q.length){
+    const s3=Math.round(3*sc/Q.length);
+    if(!qm){S[M.id]=Math.max(S[M.id]??0,s3);save()}
+    A.v=`<div class="panel c"><div class="big">${s3==3?"🎉":s3==2?"👏":"💪"}</div><h1>${sc} dari ${Q.length} benar</h1><div class="st">${stars(s3)}</div><p>${s3==3?"Luar biasa! Kamu hebat sekali!":s3==2?"Bagus! Sedikit lagi sempurna.":"Tidak apa-apa. Ayo coba lagi!"}</p></div><button class="btn big" onclick="${qm?"mix()":"quiz()"}">Main Lagi dengan Soal Baru</button><button class="btn big ghost" onclick="home()">Kembali ke Beranda</button>`;
+    scrollTo(0,0);if(s3==3)burst();fx(s3>=2?"win":"ok");return;
+  }
+  const k=Q[qi];
+  A.v=`<button class="back" onclick="${qm?"home()":"mod()"}">← ${qm?"Beranda":"Materi"}</button><div class="sm">${qm?"Latihan Campur · ":""}Soal ${qi+1} dari ${Q.length}</div><div class="panel"><h2>${esc(k.pertanyaan)}</h2><button class="spk" onclick="hear(Q[qi].pertanyaan)" aria-label="Bacakan soal">🔊</button></div>`+
+  k.pilihan.map(p=>`<button class="opt" id="o${p.kode}" onclick="pick('${p.kode}')"><b>${p.kode}</b>${esc(p.teks)}</button>`).join("")+`<div id="fb"></div>`;
+  scrollTo(0,0);
+}
+function pick(c){
+  if(ans)return;ans=c;
+  const k=Q[qi],ok=c==k.jawabanBenar;if(ok){sc++;good()}fx(ok?"ok":"no");
+  document.getElementById("o"+k.jawabanBenar).classList.add("ok");
+  if(!ok)document.getElementById("o"+c).classList.add("no");
+  document.getElementById("fb").innerHTML=`<div class="panel ${ok?"g":"r"}"><b>${ok?"✅ Benar!":"❌ Belum tepat."}</b><p style="font-size:19px">${esc(k.penjelasan)}</p></div><button class="btn big" onclick="qi++;ans=null;q()">${qi==Q.length-1?"Lihat Hasil":"Soal Berikutnya →"}</button>`;
+  document.getElementById("fb").scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+
+let R,ri,rs,ra,rt,W,wi,ws,wt,wp,C,cf,cm,cl,wg="susun";
+const WORDS=[["👕","baju","ba","ju"],["📚","buku","bu","ku"],["👀","mata","ma","ta"],["🐄","sapi","sa","pi"],["🦶","kaki","ka","ki"],["🧢","topi","to","pi"],["🐴","kuda","ku","da"],["🍞","roti","ro","ti"],["🪑","meja","me","ja"],["⚽","bola","bo","la"],["🦆","bebek","be","bek"],["🐔","ayam","a","yam"]];
+const AJAIB=[["Kamu ingin meminjam pensil teman.","Tolong"],["Teman membantumu mengambil buku.","Terima kasih"],["Kamu tidak sengaja menginjak kaki teman.","Maaf"],["Ibu memberimu permen.","Terima kasih"],["Kamu butuh bantuan membuka botol.","Tolong"],["Kamu merusak mainan adik.","Maaf"],["Kamu terlambat masuk kelas.","Maaf"],["Ayah mengantarmu ke sekolah.","Terima kasih"],["Kamu ingin Ibu mengambilkan air.","Tolong"],["Guru memujimu pintar.","Terima kasih"]];
+const GAMES=[
+{id:"huruf",ic:"🎯",c:"#ffd23f",n:"Tebak Huruf Depan",d:"Lihat gambar, pilih huruf depannya.",f:gHuruf},
+{id:"susun",ic:"🧩",c:"#34d399",n:"Susun Kata",d:"Susun suku kata menjadi kata.",f:gSusun},
+{id:"vokal",ic:"🔤",c:"#a78bfa",n:"Vokal atau Konsonan?",d:"Tebak jenis huruf.",f:gVokal},
+{id:"memori",ic:"🃏",c:"#60a5fa",n:"Kartu Memori",d:"Cocokkan gambar dengan katanya.",f:gMemori},
+{id:"dengar",ic:"👂",c:"#fb923c",n:"Dengar & Pilih",d:"Dengar kata, pilih gambarnya.",f:gDengar},
+{id:"ajaib",ic:"✨",c:"#f472b6",n:"Kata Ajaib",d:"Tolong, terima kasih, atau maaf?",f:gAjaib},
+{id:"eja",ic:"🔡",c:"#22d3ee",n:"Eja Kata",d:"Susun huruf menjadi kata.",f:gEja},
+{id:"kalimat",ic:"📝",c:"#f87171",n:"Kalimat Acak",d:"Susun kata menjadi kalimat.",f:gKalimat},
+{id:"tanda",ic:"❓",c:"#c084fc",n:"Titik atau Tanya?",d:"Pilih tanda baca yang tepat.",f:gTanda}];
+function games(){
+  A.v=`<button class="back" onclick="home()">← Beranda</button><h1>Main Yuk!</h1>`+GAMES.map(g=>`<button class="card" onclick="GAMES.find(x=>x.id=='${g.id}').f()"><span class="ic" style="background:${g.c}">${g.ic}</span><span class="tx"><b>${g.n}</b><em>${g.d}</em>${S["g_"+g.id]!=null?`<span class="ch">Terbaik: ${S["g_"+g.id]}${g.id=="memori"?" langkah":""}</span>`:""}</span></button>`).join("");
+  scrollTo(0,0);
+}
+function endG(n,title,s,hi=1){
+  const p=S["g_"+n];S["g_"+n]=p==null?s:hi?Math.max(p,s):Math.min(p,s);save();
+  A.v=`<div class="panel c"><div class="big">🏆</div><h1>${title}</h1><p>Hebat! Ayo main lagi.</p></div><button class="btn big" onclick="GAMES.find(x=>x.id=='${n}').f()">Main Lagi</button><button class="btn big ghost" onclick="games()">Pilih Game Lain</button>`;
+  scrollTo(0,0);burst();fx("win");
+}
+function fb(ok,ex,nx,l){
+  const e=document.getElementById("fb");
+  e.innerHTML=`<div class="panel ${ok?"g":"r"}"><b>${ok?"✅ Benar!":"❌ Hampir!"}</b> ${ex}</div><button class="btn big" onclick="${nx}">${l?"Lihat Hasil":"Lanjut →"}</button>`;
+  e.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function run(n,title,rounds){R=rounds;ri=0;rs=0;ra=0;rt=title;rn=n;rr()}
+let rn;
+function rr(){
+  if(ri>=R.length){endG(rn,`Skor: ${rs} dari ${R.length}`,rs);return}
+  const r=R[ri];
+  A.v=`<button class="back" onclick="games()">← Pilih Game</button><div class="sm">${rt} · Soal ${ri+1} dari ${R.length} · Skor ${rs}</div><div class="panel c">${r.head}${r.say?`<br><button class="spk" onclick="hear(R[ri].say)" aria-label="Dengarkan">🔊 Dengarkan</button>`:""}</div><div class="${r.row?"row":""}">`+r.opts.map((o,i)=>`<button class="opt${r.row?" lt":""}" onclick="rp(this,${i})">${o.t}</button>`).join("")+`</div><div id="fb"></div>`;
+  if(r.say)say(r.say);
+  scrollTo(0,0);
+}
+function rp(b,i){
+  if(ra)return;ra=1;
+  const r=R[ri],ok=r.opts[i].ok;if(ok){rs++;good()}fx(ok?"ok":"no");
+  b.classList.add(ok?"ok":"no");
+  if(!ok)document.querySelectorAll(".opt")[r.opts.findIndex(o=>o.ok)].classList.add("ok");
+  fb(ok,r.ex,"ri++;ra=0;rr()",ri==R.length-1);
+}
+function gHuruf(){
+  const L="ABDGHIKLMNPRSTUW";
+  run("huruf","Tebak Huruf Depan",shuffle(ITEMS).slice(0,10).map(it=>{
+    let o=[it[2]];while(o.length<3){const x=L[Math.floor(Math.random()*L.length)];if(!o.includes(x))o.push(x)}
+    return{head:`<div class="big" style="font-size:92px">${it[0]}</div><h1>${it[1]}</h1><h2>Huruf depannya apa?</h2>`,say:it[1],row:1,opts:shuffle(o).map(x=>({t:x,ok:x==it[2]})),ex:`${it[1]} diawali huruf ${it[2]}.`}}));
+}
+function gVokal(){
+  run("vokal","Vokal atau Konsonan?",shuffle("ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")).slice(0,10).map(l=>{
+    const v="AIUEO".includes(l);
+    return{head:`<div class="big" style="font-size:96px">${l}</div><h2>Huruf apakah ini?</h2>`,row:1,opts:[{t:"Vokal",ok:v},{t:"Konsonan",ok:!v}],ex:`${l} adalah huruf ${v?"vokal":"konsonan"}.`}}));
+}
+function gDengar(){
+  run("dengar","Dengar & Pilih",shuffle(ITEMS).slice(0,10).map(it=>({
+    head:`<h2>Dengarkan kata ini</h2><div class="big">🔊</div>`,say:it[1],
+    opts:shuffle([it,...shuffle(ITEMS.filter(x=>x[1]!=it[1])).slice(0,2)]).map(x=>({t:`${x[0]} ${x[1]}`,ok:x[1]==it[1]})),ex:`Kata yang kamu dengar: ${it[1]}.`})));
+}
+function gAjaib(){
+  run("ajaib","Kata Ajaib",shuffle(AJAIB).slice(0,8).map(a=>({
+    head:`<div class="big">✨</div><h2>${a[0]}</h2><div class="sm">Kata ajaib apa yang tepat?</div>`,
+    opts:["Tolong","Terima kasih","Maaf"].map(x=>({t:x,ok:x==a[1]})),ex:`Kata ajaibnya: ${a[1]}.`})));
+}
+const WG={susun:["Susun Kata","Susun suku kata menjadi kata"],eja:["Eja Kata","Susun huruf menjadi kata"],kalimat:["Kalimat Acak","Susun kata menjadi kalimat"]};
+const KAL=[["🍚","Ibu masak nasi."],["📖","Ayah baca buku."],["🍞","Adik makan roti."],["⚽","Aku suka bola."],["✉️","Kakak menulis surat."],["🧢","Ani memakai topi."],["🥛","Kucing minum susu."],["🎒","Budi membawa tas."],["🧹","Ibu menyapu lantai."],["🌽","Ayam makan jagung."]];
+const TANDA=[["Siapa namamu",1],["Ani makan nasi",0],["Itu apa",1],["Ibu pergi ke pasar",0],["Di mana bukumu",1],["Adik tidur",0],["Kapan kamu pulang",1],["Ayah membaca koran",0],["Mengapa langit biru",1],["Aku suka menggambar",0]];
+function gSusun(){wg="susun";W=shuffle(WORDS).slice(0,8);wi=0;ws=0;wn()}
+function gEja(){wg="eja";W=shuffle(WORDS.filter(w=>w[1].length<=5)).slice(0,8).map(w=>[w[0],w[1],...w[1].split("")]);wi=0;ws=0;wn()}
+function gKalimat(){wg="kalimat";W=shuffle(KAL).slice(0,6).map(k=>[k[0],k[1],...k[1].split(" ")]);wi=0;ws=0;wn()}
+function gTanda(){
+  run("tanda","Titik atau Tanya?",shuffle(TANDA).slice(0,10).map(t=>{
+    const q=t[1];
+    return{head:`<h2>Tanda baca apa di akhir kalimat ini?</h2><h1 style="font-size:32px">${esc(t[0])} <span style="color:var(--pri)">▢</span></h1>`,say:t[0],
+      opts:shuffle([{t:"Titik ( . )",ok:!q},{t:"Tanda tanya ( ? )",ok:!!q}]),
+      ex:`${t[0]}${q?"?":"."} Kalimat ${q?"tanya":"cerita"} diakhiri ${q?"tanda tanya (?)":"titik (.)"}.`}}));
+}
+function wn(){
+  if(wi>=W.length){endG(wg,`Skor: ${ws} dari ${W.length}`,ws);return}
+  wt=shuffle(W[wi].slice(2));wp=[];wr();
+}
+function wr(){
+  const w=W[wi],n=w.length-2,k=wg=="kalimat",e=wg=="eja";
+  A.v=`<button class="back" onclick="games()">← Pilih Game</button><div class="sm">${WG[wg][0]} · Soal ${wi+1} dari ${W.length} · Skor ${ws}</div><div class="panel c"><div class="big">${w[0]}</div><h2>${WG[wg][1]}</h2>${k?"":`<button class="spk" onclick="hear('${w[1]}')" aria-label="Dengarkan kata">🔊</button>`}<div class="row" style="justify-content:center;margin-top:10px">${Array.from({length:n},(_,i)=>`<div class="slot${k?" wd":e?" lt":""}">${wp[i]!=null?esc(wt[wp[i]]):""}</div>`).join("")}</div></div><div class="row" style="justify-content:center">${wt.map((s,i)=>`<button class="opt lt${k?" wd":""}" ${wp.includes(i)?"disabled":""} onclick="wk(${i})">${esc(s)}</button>`).join("")}</div><div class="nav"><button class="btn ghost" ${wp.length&&wp.length<n?"":"disabled"} onclick="wp.pop();wr()">⌫ Hapus</button></div><div id="fb"></div>`;
+}
+function wk(i){
+  const w=W[wi],n=w.length-2;
+  if(wp.length>=n)return;
+  fx("tap");wp.push(i);wr();
+  if(wp.length==n){
+    const ok=wp.map(j=>wt[j]).join(wg=="kalimat"?" ":"")==w[1];
+    if(ok){ws++;good()}
+    fx(ok?"ok":"no");if(ok)say(w[1]);
+    fb(ok,ok?`${wg=="kalimat"?"Kalimatnya":"Katanya"}: ${w[1]}`:`Jawaban yang benar: ${w[1]}`,"wi++;wn()",wi==W.length-1);
+  }
+}
+function gMemori(){
+  const p=shuffle(ITEMS).slice(0,6);
+  C=shuffle(p.flatMap((x,k)=>[{k,e:x[0]},{k,e:x[1],w:1}])).map(c=>({...c,o:0,d:0}));
+  cf=[];cm=0;cl=0;mr();
+}
+function mr(){
+  A.v=`<button class="back" onclick="games()">← Pilih Game</button><div class="sm">Kartu Memori · Langkah ${cm}</div><div class="panel c"><h2>Cari pasangan gambar dan katanya</h2></div><div class="mem">${C.map((c,i)=>`<button class="mc${c.o||c.d?" o":""}${c.w?" w":""}${c.d?" d":""}" onclick="mf(${i})">${c.o||c.d?c.e:"?"}</button>`).join("")}</div>`;
+}
+function mf(i){
+  const c=C[i];if(cl||c.o||c.d)return;
+  c.o=1;cf.push(i);mr();
+  if(cf.length==2){
+    cm++;cl=1;const[a,b]=cf.map(j=>C[j]),m=a.k==b.k;
+    setTimeout(()=>{if(m){a.d=b.d=1;fx("ok")}a.o=b.o=0;cf=[];cl=0;mr();if(C.every(x=>x.d))endG("memori",`Selesai dalam ${cm} langkah!`,cm,0)},m?450:900);
+  }
+}
+const TEMA=["Diriku","Kegemaranku","Kegiatanku","Keluargaku","Pengalamanku","Lingkungan Bersih, Sehat, dan Asri","Benda, Hewan, dan Tanaman di Sekitarku","Peristiwa Alam"];
+const BOOKS=TEMA.flatMap((t,i)=>[["siswa","Buku Siswa","#5b3fe0"],["guru","Buku Guru","#f59e0b"]].map(k=>({n:`Tema ${i+1}: ${t}`,d:`Buku Tematik Terpadu K13 ${k[1]} untuk SD kelas 1.`,g:k[0],c:k[2],ic:["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣"][i],url:""})));
+// Isi url tiap buku dengan tautan Google Drive, mis. url:"https://drive.google.com/..."
+let bq="",bf="all",tt,rc=0;
+function fl(){const f=S.fav2||[];return BOOKS.map((b,i)=>({...b,i})).filter(b=>(bf=="all"||(bf=="fav"?f.includes(b.i):b.g==bf))&&(b.n+" "+b.d).toLowerCase().includes(bq.trim().toLowerCase()))}
+function bc(){
+  const l=fl(),f=S.fav2||[];
+  return l.length?l.map(b=>`<div class="card"><span class="ic" style="background:${b.c}">${b.ic}</span><span class="tx"><span class="tag">${b.g=="siswa"?"Buku Siswa":"Buku Guru"}</span><b>${b.n}</b><em>${b.d}</em></span><span class="act"><button class="star" onclick="fv(${b.i})" aria-label="Favorit">${f.includes(b.i)?"★":"☆"}</button><button class="open" onclick="ob(${b.i})">Buka ›</button></span></div>`).join(""):`<div class="panel c">Buku tidak ditemukan. Coba kata kunci lain.</div>`;
+}
+function bl(){document.getElementById("bl").innerHTML=bc()}
+function buku(){
+  TAB="buku";
+  A.v=`<h1>Buku K13 Kelas 1 SD</h1><input class="srch" aria-label="Cari buku" placeholder="🔍 Cari buku, mis. Tema 3 atau Diriku" value="${esc(bq)}" oninput="bq=this.value;bl()"><div class="chips">${[["all","Semua"],["siswa","Buku Siswa"],["guru","Buku Guru"],["fav","⭐ Favorit"]].map(c=>`<button class="chip${bf==c[0]?" on":""}" onclick="bf='${c[0]}';buku()">${c[1]}</button>`).join("")}</div><div class="fact">ℹ️ Buku dibuka lewat Google Drive. Pastikan HP terhubung ke internet.</div><div id="bl">${bc()}</div>`;
+  scrollTo(0,0);
+}
+function fv(i){const f=S.fav2||[];S.fav2=f.includes(i)?f.filter(x=>x!=i):[...f,i];save();bl()}
+function ob(i){const u=BOOKS[i].url;if(u)window.open(u,"_blank","noopener");else toast("Tautan Google Drive untuk buku ini belum diisi.")}
+function toast(m){const e=document.getElementById("toast");e.textContent=m;e.hidden=false;clearTimeout(tt);tt=setTimeout(()=>e.hidden=true,2800)}
+const TH=[["auto","Otomatis"],["light","Terang"],["dark","Gelap"]],RTL=[[0,"Pelan"],[1,"Normal"],[2,"Cepat"]];
+function chipsH(g,list,cur){return `<div class="chips">${list.map(([v,l])=>{const on=String(cur)==String(v);return `<button class="chip${on?" on":""}" data-g="${g}" data-v="${v}" aria-pressed="${on}" onclick="setOpt('${g}','${v}')">${l}</button>`}).join("")}</div>`}
+function setOpt(g,v){
+  if(g=="rt"){S.rt=+v;save();say("Halo! Ayo belajar membaca.")}else{S.th=v=="auto"?undefined:v;save();applyTheme()}
+  const cur=g=="rt"?(S.rt??1):(S.th||"auto");
+  document.querySelectorAll(`[data-g="${g}"]`).forEach(b=>{const on=b.dataset.v==String(cur);b.classList.toggle("on",on);b.setAttribute("aria-pressed",String(on))});
+}
+function sw(k,ic,t,d){return `<div class="set"><span>${ic} ${t}<small>${d}</small></span><button class="sw" data-k="${k}" role="switch" aria-label="${t}" aria-checked="${S[k]!==0}" onclick="tg('${k}')"><i></i></button></div>`}
+function tentang(){
+  TAB="tentang";
+  const ms=D.modul,n=ms.length,done=ms.filter(m=>S[m.id]!=null).length,perf=ms.filter(m=>S[m.id]==3).length,gp=GAMES.filter(g=>S["g_"+g.id]!=null).length;
+  const B=[["🌱","Pemula","Selesaikan 1 modul",done>=1],["🧭","Penjelajah","Selesaikan semua modul",done==n],["🌟","Bintang","Nilai sempurna semua modul",perf==n],["🎮","Jago Main","Coba semua game",gp==GAMES.length],["🔥","Rajin","Belajar 3 hari beruntun",(S.bs||0)>=3],["🎯","Jagoan","50 jawaban benar",(S.ok||0)>=50]];
+  A.v=`<div class="hero"><h1>${S.nama?`Halo, ${esc(S.nama)}!`:"Ayo Membaca!"}</h1><div class="sm">Statistik belajar, lencana, dan pengaturan</div></div><div class="stats"><div class="stat"><b>${done}/${n}</b>Modul selesai</div><div class="stat"><b>${S.ok||0}</b>Jawaban benar</div><div class="stat"><b>${perf}</b>Nilai sempurna</div><div class="stat"><b>🔥 ${streak()}</b>Hari beruntun</div><div class="stat"><b>${gp}/${GAMES.length}</b>Game dicoba</div><div class="stat"><b>${S.bs||0}</b>Rekor hari beruntun</div></div><h2>Lencana</h2><div class="badges">${B.map(b=>`<div class="bd${b[3]?"":" lock"}"><i>${b[3]?b[0]:"🔒"}</i><b>${b[1]}</b>${b[2]}</div>`).join("")}</div>
+  <div class="panel"><h2>⚙️ Pengaturan</h2><label class="sm" for="nm">Nama kamu</label><input id="nm" class="srch" maxlength="20" autocomplete="off" placeholder="Tulis namamu di sini" value="${esc(S.nama||"")}" oninput="S.nama=this.value.slice(0,20).trim();save()">
+  ${sw("vo","🔊","Suara bacaan","Suara saat tombol 🔊, huruf, atau kalimat ditekan")}
+  ${sw("fx","🎵","Efek suara","Bunyi untuk jawaban benar, salah, dan menang")}
+  <div class="set" style="display:block"><span>🐢 Kecepatan membaca</span>${chipsH("rt",RTL,S.rt??1)}</div>
+  <div class="set" style="display:block"><span>🌓 Tampilan</span>${chipsH("th",TH,S.th||"auto")}</div>
+  <button class="btn ghost" style="margin-top:6px" onclick="hear('Halo! Ayo kita belajar membaca bersama.')">🔊 Tes Suara</button></div>
+  <div class="panel"><h2>Tentang Aplikasi</h2><p style="font-size:18px">Aplikasi belajar Bahasa Indonesia untuk anak SD kelas 1, dilengkapi tips untuk guru dan orang tua.</p><p style="font-size:18px;margin-bottom:0"><b>Fitur</b><br>• 4 modul materi dengan tips untuk guru<br>• Bacakan semua dengan sorotan kalimat<br>• Kuis interaktif dengan soal acak dan penjelasan<br>• ${GAMES.length} game edukasi<br>• Buku K13 kelas 1 dengan pencarian dan favorit<br>• Suara bisa dimatikan kapan saja (tombol 🔊 di kanan atas)<br>• Hari beruntun, lencana, dan tampilan terang/gelap</p></div><button class="btn big ghost" onclick="rset()">Hapus Progres Belajar</button>`;
+  scrollTo(0,0);
+}
+function rset(){if(!rc){rc=1;toast("Tekan sekali lagi untuk menghapus semua progres.");setTimeout(()=>rc=0,3000);return}rc=0;const k={vo:S.vo,fx:S.fx,rt:S.rt,th:S.th,nama:S.nama};S=k;save();tentang()}
+applyTheme();
+home();
+</script>
+</body>
+</html>
